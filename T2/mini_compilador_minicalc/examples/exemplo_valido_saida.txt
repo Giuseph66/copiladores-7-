@@ -1,0 +1,49 @@
+Arquivo de entrada: examples/exemplo_valido.mc
+
+=== TOKENS RECONHECIDOS ===
+LET"let"L2
+ID"n1"L2
+ASSIGN"="L2
+REAL"7.5"L2
+SEMICOLON";"L2
+LET"let"L3
+ID"n2"L3
+ASSIGN"="L3
+REAL"8.0"L3
+SEMICOLON";"L3
+LET"let"L4
+ID"n3"L4
+ASSIGN"="L4
+REAL"9.5"L4
+SEMICOLON";"L4
+LET"let"L5
+ID"soma"L5
+ASSIGN"="L5
+ID"n1"L5
+PLUS"+"L5
+ID"n2"L5
+PLUS"+"L5
+ID"n3"L5
+SEMICOLON";"L5
+LET"let"L6
+ID"media"L6
+ASSIGN"="L6
+ID"soma"L6
+DIV"/"L6
+INT"3"L6
+SEMICOLON";"L6
+PRINT"print"L7
+ID"media"L7
+SEMICOLON";"L7
+EOF""L8
+
+=== ÁRVORE SINTÁTICA ===
+Programa
+ Decl: n1 = 7.5
+ Decl: n2 = 8.0
+ Decl: n3 = 9.5
+ Decl: soma = ((n1 + n2) + n3)
+ Decl: media = (soma / 3)
+ Print: media
+
+Compilação finalizada com sucesso.

@@ -1,0 +1,26 @@
+Arquivo de entrada: examples/erro_sintatico.mc
+
+=== TOKENS RECONHECIDOS ===
+LET"let"L1
+ID"x"L1
+ASSIGN"="L1
+INT"10"L1
+LET"let"L2
+ID"y"L2
+ASSIGN"="L2
+INT"20"L2
+SEMICOLON";"L2
+PRINT"print"L3
+ID"y"L3
+SEMICOLON";"L3
+EOF""L4
+
+=== ÁRVORE SINTÁTICA ===
+Programa
+ Decl: y = 20
+ Print: y
+
+=== ERROS SINTÁTICOS ===
+Erro sintático na linha 2: esperado ';' ao final da declaração
+
+Compilação finalizada com erros.

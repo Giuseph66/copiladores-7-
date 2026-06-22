@@ -1,0 +1,25 @@
+Arquivo de entrada: examples/erro_lexico.mc
+
+=== TOKENS RECONHECIDOS ===
+LET"let"L1
+ID"x"L1
+ASSIGN"="L1
+INT"10"L1
+INT"2"L1
+SEMICOLON";"L1
+PRINT"print"L2
+ID"x"L2
+SEMICOLON";"L2
+EOF""L3
+
+=== ERROS LÉXICOS ===
+Erro léxico na linha 1: caractere inválido '@'
+
+=== ÁRVORE SINTÁTICA ===
+Programa
+ Print: x
+
+=== ERROS SINTÁTICOS ===
+Erro sintático na linha 1: esperado ';' ao final da declaração
+
+Compilação finalizada com erros.

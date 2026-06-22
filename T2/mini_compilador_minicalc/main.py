@@ -7,6 +7,9 @@ from lexer import Lexer
 from parser import Parser
 
 
+CAMINHO_ARQUIVO = "examples/exemplo_valido.mc"
+
+
 def ler_codigo_fonte(caminho):
     try:
         with open(caminho, "r", encoding="utf-8") as arquivo:
@@ -58,7 +61,7 @@ def obter_caminho_saida(caminho_arquivo):
 
 
 def main():
-    caminho_arquivo = "examples/exemplo_valido.mc"
+    caminho_arquivo = CAMINHO_ARQUIVO
     if len(sys.argv) >= 2:
         caminho_arquivo = sys.argv[1]
 
